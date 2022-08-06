@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+    outline-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: #fff;
+    color: #333;
+}
+
+input {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"],
+input[type="text"] {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+input[type="text"] {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="submit"] {
+    border: none;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -9999em;
+}
+
+#app {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 2rem auto;
+}
+
+#output {
+    margin-top: 1.5rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (min-width: 768px) {
+    #app {
+        max-width: 960px;
+    }
+
+    form > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form input[type="submit"] {
+        width: auto;
+    }
+
+    form input[type="text"] {
+        width: 70%;
+    }
+}
